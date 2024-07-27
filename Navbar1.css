@@ -1,0 +1,19 @@
+.navcontainer{
+    height: 70px;
+    background-color:teal;
+    display: flex;
+    justify-content: center;
+}
+.navcontainer section{
+    width:95%;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+
+
+}
+.menu{
+    width: 400px;
+    display: flex;
+    
+}

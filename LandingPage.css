@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    height: 70px;
+    background: linear-gradient(rgb(144, 140, 140), rgb(34, 29, 29), rgb(6, 6, 6));
+    color: white;
+}
+
+header nav {
+    height: inherit;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav section {
+    height: inherit;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo {
+    flex-basis: 20%;
+}
+
+#search {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+main {
+    height: 500px;
+    display: flex;
+}
+
+main aside {
+    flex-basis: 20%;
+    border: 1px solid;
+    padding: 10px;
+}
+
+main section {
+    flex-basis: 80%;
+    padding: 10px;
+}
+
+footer {
+    height: 70px;
+    background-color: rgb(209, 193, 193);
+    color: rgb(10, 10, 10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner {
+    height: 750px;
+    width: 100%;
+    background-image: url(./backgroundimage.jpg);
+    position: relative;
+    color: aliceblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+#search svg {
+    margin-left: 10px;
+}
+
+aside h3 {
+    background: linear-gradient(black, grey);
+    color: rgb(248, 246, 246);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+aside ol {
+    margin-left: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #logo, #search, #menu {
+        flex-basis: auto;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main aside, main section {
+        flex-basis: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    header nav section {
+        width: 100%;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+section div{
+    padding-left: 60px;
+    
+}
